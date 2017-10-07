@@ -21,3 +21,8 @@ body {
     -webkit-background-size: 50px 50px;
     background-size: 50px 50px;
   }
+
+  html {
+    filter: unset;
+    filter: grayscale(0%) !important;
+  }
