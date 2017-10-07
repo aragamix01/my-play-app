@@ -1,0 +1,13 @@
+<ng-container *ngIf="!isIntro; else elseTemplate">
+  <div class="wrapper">
+    <button class="btn btn-primary" (click)="isIntro=!isIntro">Enter</button>
+    <video autoplay loop muted id="background" class="blur">
+      <source src="./assets/video/video2.mp4" type="video/mp4">
+    </video>
+  </div>
+</ng-container>
+<ng-template #elseTemplate>
+  <app-header></app-header>
+  <app-video-cover></app-video-cover>
+  <app-carousel></app-carousel>
+</ng-template>
