@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Gallery</h3>
+          <carousel>
+            <slide *ngFor="let image of images">
+              <img src="./assets/images/{{image}}" alt="Second slide">
+            </slide>
+          </carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
