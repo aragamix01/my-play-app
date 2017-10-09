@@ -14,6 +14,7 @@ import { AnounceComponent } from './intro-page/home-page/anounce/anounce.compone
 import { AboutPageComponent } from './intro-page/about-page/about-page.component';
 import { NewsPageComponent } from './intro-page/news-page/news-page.component';
 import { GalleryPageComponent } from './intro-page/gallery-page/gallery-page.component';
+import { GalleryManageComponent } from './intro-page/gallery-page/gallery-manage/gallery-manage.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent},
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     AnounceComponent,
     AboutPageComponent,
     NewsPageComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+    GalleryManageComponent
   ],
   imports: [
     TabsModule.forRoot(),
