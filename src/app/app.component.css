@@ -1,13 +1,14 @@
 @font-face {
-    font-family: belinda;
-    src: url('../assets/fonts/belinda.otf');
+  font-family: belinda;
+  src: url('../assets/fonts/belinda.otf');
 }
 
 @font-face {
-    font-family: boon;
-    src: url('../assets/fonts/boon.otf');
+  font-family: boon;
+  src: url('../assets/fonts/boon.otf');
 }
-body{
-    background-color: #000000;
-    font-family: boon;
+
+body {
+  background-color: #000000;
+  font-family: boon;
 }

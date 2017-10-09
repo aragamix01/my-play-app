@@ -1,18 +1,24 @@
-@import 'variables'; 
+@import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: #fff993;
+    font-family: boon;
+  }
+}
 
-body {
+@media only screen and (orientation: landscape) {
+  body {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     border: none;
-    font: normal 100%/normal Arial, Helvetica, sans-serif;
-    //color: rgba(255,255,255,1);
+    font-family: boon;
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 0), #fff280;
-    background: -moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 0), #fff280;
-    background: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 0), #fff280;
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 0), #fff280;
+    background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 0), #fff280;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 0), #fff280;
     background-position: auto auto;
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
@@ -21,13 +27,14 @@ body {
     -webkit-background-size: 50px 50px;
     background-size: 50px 50px;
   }
+}
 
-  html {
-    filter: unset;
-    filter: grayscale(0%) !important;
-  }
+html {
+  filter: unset;
+  filter: grayscale(0%) !important;
+}
 
-  .container {
-    padding: 20px;
-    background-color: #ffffff;
-  }
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+}
