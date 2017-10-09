@@ -15,6 +15,8 @@ import { AboutPageComponent } from './intro-page/about-page/about-page.component
 import { NewsPageComponent } from './intro-page/news-page/news-page.component';
 import { GalleryPageComponent } from './intro-page/gallery-page/gallery-page.component';
 import { GalleryManageComponent } from './intro-page/gallery-page/gallery-manage/gallery-manage.component';
+import { SocialComponent } from './intro-page/home-page/social/social.component';
+import { FacebookModule } from 'ngx-facebook';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent},
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     AboutPageComponent,
     NewsPageComponent,
     GalleryPageComponent,
-    GalleryManageComponent
+    GalleryManageComponent,
+    SocialComponent
   ],
   imports: [
     TabsModule.forRoot(),
@@ -42,6 +45,7 @@ const appRoutes: Routes = [
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
     RouterModule.forRoot(appRoutes),
+    FacebookModule.forRoot(),
     FormsModule,
     BrowserModule
   ],
