@@ -1,0 +1,92 @@
+// #background {
+//     z-index: 100;
+//     position: relative;
+//     background: rgba(0,0,0,0.4);
+//     width: 100%;
+//     margin-top: -10px;
+// }
+// .container h1 {
+//     color: white;
+// }
+
+// .headline{
+//     z-index: 1000;
+//     position: absolute;
+//     top: 500px;
+//     width: 100%;
+//     text-align: center;
+//     color: #fff;
+// }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .wrapper {
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+  }
+
+  ._pattern-overlay { 
+		position: absolute;
+		top: 0;
+		width: 100%;
+		opacity: 0.3;
+		bottom: 0;
+		background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/03.png);
+		z-index: 1;
+	}
+
+  .wrapper video {
+    object-fit: contain;
+    object-fit: fill; 
+    object-fit: cover;
+    margin-left: -10px;
+    width:110%;
+    height:100%;
+    z-index: 100;
+    
+    filter: blur(7px) !important;
+  }
+
+  h1 {
+    font-family: belinda;
+    color:white;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    font-size: 15vmin;
+    top:50%;
+    transform:translateY(-50%);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:4px 4px 0 rgba(0,0,0,0.4);
+  }
+
+  h3 {
+    font-family: boon;
+    color:rgb(7, 7, 7);
+    margin-top: 150px;
+    position: absolute;
+    z-index: 2;
+    font-size: 12vmin;
+    top:50%;
+    transform:translateY(-50%);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:4px 4px 0 rgba(0,0,0,0.4);
+  }
+
+  p {
+    font-family: sans-serif;
+    line-height:1.7;
+    color:#4A4A4A;
+    margin:20px;
+  }
+
+video::-webkit-media-controls {
+  display:none !important;
+}

@@ -7,19 +7,19 @@ import { HeaderComponent } from './intro-page/header/header.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TabsModule } from 'ngx-bootstrap';
-import { VideoCoverComponent } from './intro-page/video-cover/video-cover.component';
-import { CarouselComponent } from './intro-page/video-cover/carousel/carousel.component';
 import { IntroPageComponent } from './intro-page/intro-page.component';
 import { GalleryComponent } from './intro-page/gallery/gallery.component';
-import { JetsupaComponent } from './intro-page/jetsupa/jetsupa.component';
 import { Routes, RouterModule } from '@angular/router';
-import { NewsComponent } from './intro-page/news/news.component';
+import { HomePageComponent } from './intro-page/home-page/home-page.component';
+import { AnounceComponent } from './intro-page/home-page/anounce/anounce.component';
+import { AboutPageComponent } from './intro-page/about-page/about-page.component';
+import { NewsPageComponent } from './intro-page/news-page/news-page.component';
 
 const appRoutes: Routes = [
-  { path: '', component: VideoCoverComponent},
-  { path: 'home', component: VideoCoverComponent },
-  { path: 'about', component: JetsupaComponent },
-  { path: 'news', component: NewsComponent },
+  { path: '', component: HomePageComponent},
+  { path: 'home', component: HomePageComponent },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'news', component: NewsPageComponent },
   { path: 'gallery', component: GalleryComponent }
 ];
 
@@ -27,12 +27,12 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    VideoCoverComponent,
-    CarouselComponent,
     IntroPageComponent,
     GalleryComponent,
-    JetsupaComponent,
-    NewsComponent
+    HomePageComponent,
+    AnounceComponent,
+    AboutPageComponent,
+    NewsPageComponent
   ],
   imports: [
     TabsModule.forRoot(),
