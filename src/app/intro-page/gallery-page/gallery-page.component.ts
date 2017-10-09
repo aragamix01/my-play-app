@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  selector: 'app-gallery-page',
+  templateUrl: './gallery-page.component.html',
+  styleUrls: ['./gallery-page.component.scss']
 })
-export class GalleryComponent implements OnInit {
+export class GalleryPageComponent implements OnInit {
 
   images: string[] = [
     'DSC_5346.jpg',
@@ -16,11 +16,10 @@ export class GalleryComponent implements OnInit {
     'DSC09247.jpg',
     'DSC03405.jpg'
   ];
-
+  
   constructor() { }
 
   ngOnInit() {
   }
-
 
 }

@@ -8,19 +8,19 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TabsModule } from 'ngx-bootstrap';
 import { IntroPageComponent } from './intro-page/intro-page.component';
-import { GalleryComponent } from './intro-page/gallery/gallery.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './intro-page/home-page/home-page.component';
 import { AnounceComponent } from './intro-page/home-page/anounce/anounce.component';
 import { AboutPageComponent } from './intro-page/about-page/about-page.component';
 import { NewsPageComponent } from './intro-page/news-page/news-page.component';
+import { GalleryPageComponent } from './intro-page/gallery-page/gallery-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent},
   { path: 'home', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'news', component: NewsPageComponent },
-  { path: 'gallery', component: GalleryComponent }
+  { path: 'gallery', component: GalleryPageComponent }
 ];
 
 @NgModule({
@@ -28,11 +28,11 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     IntroPageComponent,
-    GalleryComponent,
     HomePageComponent,
     AnounceComponent,
     AboutPageComponent,
-    NewsPageComponent
+    NewsPageComponent,
+    GalleryPageComponent
   ],
   imports: [
     TabsModule.forRoot(),
